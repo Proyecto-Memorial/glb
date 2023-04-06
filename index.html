@@ -5,10 +5,21 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs>
 <!-- define your gltf asset -->
-<a-assets>
-  <a-asset-item id="avocado" src="Avocado.glb"></a-asset-item>
-</a-assets>
-<!-- use your gltf model -->
-<a-entity gltf-model="##avocado"></a-entity>
-  </a-scene>
+  <a-scene>
+      <a-assets>
+
+        <a-asset-item 
+          id="glbtestmodel"
+          src="https://cdn.glitch.com/90a30469-f038-4054-be9c-fd1ec94a810d%2Fkitchentest.glb">
+        </a-asset-item>
+
+      </a-assets>
+
+      <a-entity 
+          id="glbtest"
+          gltf-model="#glbtestmodel"
+          position="0 1 -2">
+      </a-entity>
+
+    </a-scene>
 </body>
